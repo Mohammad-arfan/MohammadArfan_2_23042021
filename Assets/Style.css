@@ -1,0 +1,802 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+} /* Nav bar and logo */
+
+
+#logo_nav
+{
+    width:100% ;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+#logo_nav img
+{
+    padding: 20px 20px 20px 0;
+    margin-left: 15px;
+}
+
+/* Navigation */
+
+#logo_nav nav ul
+{
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    right: 5px;
+    margin-top: 0%;
+}
+
+nav li a
+{
+    display: block;
+    color: black;
+    padding: 20px 10px 0 25px;
+    border-top: 2px solid transparent;
+    text-decoration: none;
+}
+
+#navins h4
+{
+    color: #0065FC;
+    margin: 0;
+    padding: 20px 10px 0 25px;
+}
+.active{
+  color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+
+/*serach box et fitres styling!!!!!!!!!!!!!!!!!!!*/
+#Search-box {
+ margin: 0px 15px;
+}
+ #Search-box h3 {
+  font-weight: 800;
+  margin-left: 0%;
+  padding-left: 0%;
+ 
+  
+}
+#Search-box p {
+  font-weight: 500;
+  font-size: 0.99rem;
+}
+.btn { 
+  width: 45px;
+  height: 45px;
+  color: #000000;
+  font-weight: 900;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 12px 0 0 12px;
+}
+.fa-map-marker {
+  background-color: #f2f2f2;
+  position: relative;
+  font-weight: 900;
+}
+
+input[type="text"] {
+  width: 200px;
+  height: 45px;
+  background-color: #ffffff;
+  color: #000000;
+  border: #f2f2f2 solid 1px;
+  outline: #f2f2f2;
+  font-size: 15px;
+  font-weight: 900;
+  padding: 0px 20px;
+  position: relative;
+  left: -5px;
+}
+
+input[type="submit"] {
+  position: relative;
+  border-radius: 0 12px 12px 0;
+  width: 120px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: #0065fc;
+  color: #f2f2f2;
+  font-weight: bold;
+  left: -10px;
+  transition: 0.5s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #136df5;
+  color: #000000;
+}
+.BTN {
+  max-width: 500px;
+  position: relative;
+  display: none;
+  border-radius: 12px 12px;
+  width: 50px;
+  height: 45px;
+  left: -12px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: #0065fc;
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+.Filtres-container {
+  font-weight: 900;
+}
+ul.Filtres {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+
+  padding: 0%;
+}
+
+
+
+.Filtres li {
+  list-style: none;
+  font-weight: 900;
+  margin: 0px;
+
+}
+.Filtres li h3 {
+  font-weight: 900;
+  font-size: 20px;
+
+ align-self: center;
+
+
+
+  
+}
+.Filtres li a {
+  border: 2px solid #f2f2f2;
+margin: 0px 10px;
+  padding: 12px 25px 12px 0px;
+  color: #000;
+  font-size: 1rem;
+
+  font-weight: 900;
+  text-align: center;
+  border-radius: 25px;
+  border-left: none;
+  text-decoration: none;
+
+  transition: 0.3s ease-in-out;
+}
+.Filtres li a:hover {
+  background-color: #deebff;
+  opacity: 1;
+}
+
+.fa-money-bill-wave {
+  color: #0065fc;
+  background-color: #deebff;
+  border: none;
+
+  padding: 15px;
+  border-radius: 20px;
+  margin-right: 15px;
+}
+.fa-child {
+  color: #0065fc;
+  background-color: #deebff;
+  border: none;
+  padding: 15px;
+  border-radius: 25px;
+  margin-right: 15px;
+}
+.fa-heart {
+  color: #0065fc;
+  background-color: #deebff;
+  border: none;
+  padding: 15px;
+  border-radius: 20px;
+  margin-right: 15px;
+  align-items: center;
+}
+.fa-dog {
+  color: #0065fc;
+  background-color: #deebff;
+  border: none;
+  padding: 15px;
+
+  border-radius: 20px;
+  margin-right: 15px;
+}
+.fa-child:hover {
+  background-color: #f2f2f2;
+}
+.fa-dog:hover {
+  background-color: #f2f2f2;
+}
+
+.fa-heart:hover {
+  background-color: #f2f2f2;
+}
+.fa-money-bill-wave:hover {
+  background-color: #f2f2f2;
+}
+.fa-child:hover {
+  background-color: #f2f2f2;
+}
+.fa-info {
+  border: 2px solid #deebff;
+  padding: 5px 8px;
+  border-radius: 50%;
+  font-weight: 400;
+  color: #0065fc;
+}
+
+#Hebergement-ficher {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#Hébergements {
+  margin-left: 15px;
+  padding-top: 15px;
+  padding-left: 25px;
+}
+
+.Hebergement-main-container{
+  background-color: #f2f2f2;
+  width: 65%;
+  border-radius: 25px;
+  margin: 0px 15px;
+}
+.main-container-chambre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0px 10px 25px;
+  margin: 10px;
+}
+
+.fa-star,
+.checked {
+  font-size: 10px;
+}
+.fa-star {
+  color: #d3d2d2;
+}
+.checked {
+  color: #136df5;
+  margin: 0px;
+  padding: 0px;
+}
+.prix {
+  font-size: 15px;
+  font-weight: 500;
+}
+.Chambre-wraper {
+  padding: 10px 8px;
+  width: 32.99999%;
+  height: auto;
+}
+div.Chambres {
+  border: 5px solid #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: #bdbaba 5px 5px 10px;
+  transition: ease-out 0.3s;
+}
+
+div.Chambres img {
+  width: 100%;
+  height: 130px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  object-fit: cover;
+  object-position:center;
+  
+}
+div.Chambres:hover {
+  border: 5px solid #f2f2f2;
+  border-radius: 20px;
+  opacity: 0.7;
+}
+
+div.desc {
+  padding-top: 15px;
+  padding-left: 10px;
+  text-align: left;
+  padding-bottom: 5px;
+  background-color: #ffffff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+div.desc a {
+  text-decoration: none;
+  color: #000000;
+}
+h3 {
+  margin: 5px;
+  padding-left: 8px;
+  padding-top: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+
+#Pop_Fiche {
+  background-color: #f2f2f2;
+  border: none;
+  width: 30%;
+  border-radius: 20px;
+
+  padding: 15px;
+}
+
+.Pop_lien {
+  width: 90%;
+  height: 9.8rem;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: #c2c0c0 5px 5px 10px;
+  transition: ease-out 0.3s;
+  background-color: #ffffff;
+  align-items: center;
+
+  margin: 15px;
+}
+div.pop_img {
+  width: 42%;
+}
+div.pop_img a {
+  text-decoration: none;
+  color: #000000;
+}
+
+div.pop_img img {
+  width: 100%;
+  height: 9.4rem;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  object-fit: cover;
+  object-position: top;
+}
+div.pop_contenu a{
+  text-decoration: none;
+  color: #000;
+  margin-top: 0px;
+
+}
+
+div.pop_contenu {
+  
+  padding: 0px 0px 0px 15px;
+  position: relative;
+}
+div.pop_contenu h4{
+ margin: 0px;
+ top: 0px;
+}
+
+h2.Title_pop {
+  text-align: left;
+  font-weight: 700;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+.fa-chart-line {
+  float: right;
+  padding-right: 15px;
+}
+
+/*Activities----------------------*/
+.Title-Activites {
+  padding-left: 25px;
+}
+.Activities-marseille {
+  margin: 0px 15px 20px 15px;
+  width: 95%;
+  height: 100%;
+  padding-left: 10px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+
+  grid-template-areas:
+    "Vieux-Port Fort-de-Pomégues Parc-National Notre-dame"
+    "Vieux-Port Iles-du-Frioul Parc-National Parc-Longchamp";
+}
+
+.activities-O1 {
+  grid-area: Vieux-Port;
+  width: 1fr;
+  text-align: left;
+}
+
+div.Vieux-Port {
+  border: none;
+  margin: 0%;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: #dbd4d4 5px 5px 10px;
+  transition: ease-out 0.3s;
+}
+div.Vieux-Port:hover {
+  border: none;
+  border-radius: 20px;
+  opacity: 0.5;
+}
+div.Vieux-Port img {
+  width: 100%;
+  height: 380px;
+
+  object-fit: cover;
+  margin: 0%;
+  padding-left: 0%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.activities-O2 {
+  width: 1fr;
+  grid-area: Fort-de-Pomégues;
+}
+div.Fort-de-Pomégues {
+  border: none;
+  margin: 0%;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: #dbd4d4 5px 5px 10px;
+  transition: ease-out 0.3s;
+}
+.Fort-de-Pomégues img {
+  width: 100%;
+  height: 160px;
+  margin: 0%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+div.Fort-de-Pomégues:hover {
+  border: none;
+  border-radius: 20px;
+  opacity: 0.5;
+}
+
+.activities-O3 {
+  width: 1fr;
+
+  grid-area: Iles-du-Frioul;
+}
+div.Iles-du-Frioul {
+  border: none;
+  margin: 0%;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: #dbd4d4 5px 5px 10px;
+  transition: ease-out 0.3s;
+}
+.Iles-du-Frioul img {
+  width: 100%;
+  height: 145px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+div.Iles-du-Frioul:hover {
+  border: none;
+  border-radius: 20px;
+  opacity: 0.5;
+}
+.activities-O4 {
+  width: 1fr;
+  grid-area: Parc-National;
+  text-align: left;
+}
+div.Parc-National {
+  border: none;
+  margin: 0%;
+
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: #dbd4d4 5px 5px 10px;
+  transition: ease-out 0.3s;
+}
+
+.Parc-National img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+div.Parc-National:hover {
+  border: none;
+  border-radius: 20px;
+  opacity: 0.5;
+}
+.activities-O5 {
+  grid-area: Notre-dame;
+  text-align: center;
+}
+div.Notre-dame {
+  border: none;
+  margin: 0%;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: #dbd4d4 5px 5px 10px;
+  transition: ease-out 0.3s;
+}
+
+.Notre-dame img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+div.Notre-dame:hover {
+  border: none;
+  border-radius: 20px;
+  opacity: 0.5;
+}
+.activities-O6 {
+  width: 1fr;
+  grid-area: Parc-Longchamp;
+}
+
+div.Parc-Longchamp {
+  border: none;
+  margin: 0%;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: #dbd4d4 5px 5px 10px;
+  transition: ease-out 0.3s;
+}
+.Parc-Longchamp img {
+  width: 100%;
+  height: 150px;
+  margin: 0%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+div.Parc-Longchamp:hover {
+  border: none;
+  border-radius: 20px;
+  opacity: 0.5;
+}
+div.info {
+  padding: 10px 5px 25px 15px;
+  font-weight: 600;
+  text-align: left;
+}
+div.info a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 900;
+}
+.footer {
+  background-color: #f2f2f2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 30px;
+  text-justify: auto;
+}
+
+@media screen and (max-width: 700px) {
+
+
+
+  ul.Filtres {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    flex-wrap: wrap;
+  
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .Chambre-wraper {
+ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  #Hebergement-ficher {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+.Hebergement-main-container {
+  background-color: #f2f2f2;
+  width: 100%;
+  border-radius: 25px;
+  margin: 10px 0px;
+ 
+}
+
+}
+  @media only screen and (max-width: 500px) {
+    #logo_nav img 
+    {
+        padding-left: 0px;
+    }
+
+    #logo_nav nav ul
+    {
+        position: static;
+    }
+
+    #navins
+    {
+        position: absolute;
+        right: 5px;
+        text-decoration: none;
+    }
+    
+    #navheb
+    {
+        position: absolute;
+        top: 50px;
+        padding: 30px 35px 10px 45px;
+        right: 50%;
+        border-bottom: 1px #F2F2F2 solid;
+    }
+
+    #navheb h5
+    {
+        margin-bottom: 0px;
+        font-weight: bolder;
+        font-size: 90%;
+        color: #136df5;
+    }
+
+    #navact
+    {
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        left: 50%;
+        padding: 30px 10px 10px 60px;
+        margin-bottom: 10px;
+        border-bottom: 1px #F2F2F2 solid;
+    }
+
+    #navact h5
+    {
+        margin-bottom: 0px;
+        font-weight: bolder;
+        font-size: 90%;
+    }
+
+    #navheb:hover
+    {
+        border-top: none;
+        border-bottom: 4px #0065FC solid;
+    }
+.active{
+  border-top: none;
+}
+    #navact:hover
+    {
+        border-top: none;
+        border-bottom: 4px #0065FC solid;
+    }
+
+
+  input[type="submit"] {
+    display: none;
+  }
+
+  .BTN {
+    display: inline;
+  }
+
+  #Pop_Fiche {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 0px 10px;
+  margin:5px 10px ;
+  width: 100%;
+  border-radius: 20px;
+ 
+} 
+
+
+}
+
+
+@media only screen and (max-width: 700px) {
+  .Activities-marseille {
+    margin: 6px 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: autofit(6, 1.5fr);
+    grid-template-areas:
+      "Vieux-Port"
+      "Fort-de-Pomégues"
+      "Iles-du-Frioul"
+      "Parc-National"
+      "Notre-dame"
+      "Parc-Longchamp";
+  }
+
+  @media only screen and (max-width: 500px) {
+    .Activities-marseille {
+      margin: 6px 0px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: autofit(6, 1fr);
+      grid-template-areas:
+        "Vieux-Port"
+        "Fort-de-Pomégues"
+        "Iles-du-Frioul"
+        "Parc-National"
+        "Notre-dame"
+        "Parc-Longchamp";
+    }
+  
+  div.Vieux-Port img {
+    width: 99.5%;
+    height: 150px;
+
+    object-fit: cover;
+    margin: 0%;
+    padding-left: 0%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  div.Parc-National img {
+    width: 99.5%;
+    height: 150px;
+
+    object-fit: cover;
+    margin: 0%;
+    padding-left: 0%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  }
+
+}
