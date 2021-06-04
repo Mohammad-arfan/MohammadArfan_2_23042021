@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Alfie {
+  height: 100vh;
+  width: 100%;
+  font-family: sans-serif;
+  background: #201f25;
+  position: relative;
+  background-image: url(image/pkr2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+nav {
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 100px;
+  border-radius: 60px;
+  box-shadow: #fcf9f7 5px 5px 5px;
+
+  cursor: pointer;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+
+  padding-right: 10px;
+  margin: 10px 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #eff1f7;
+}
+nav ul li a:hover {
+  color: #ec8b0c;
+  border-top: 2px solid rgb(14, 13, 13);
+  padding: 10px;
+}
+.info {
+  color: #eff1f7;
+  margin-left: 10px;
+  font-family: "New Tegomin", serif;
+  width: 500px;
+}
+.info h1 {
+  color: bisque;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 10px;
+}
+.grt {
+  letter-spacing: 2px;
+}
+p {
+  font-size: 25px;
+  color: #fcf9f7;
+  font-family: "New Tegomin", sans-serif serif;
+}
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #031a12;
+  color: #ec8b0c;
+  cursor: pointer;
+}
+span {
+  color: rgb(236, 183, 9);
+  font-family: "New Tegomin", serif;
+  letter-spacing: 5px;
+}
+.signup {
+  border: none;
+  border-radius: 10px;
+  background-color: #252503;
+  padding: 7px;
+}
+.social-links {
+  margin-left: 40%;
+
+  margin-top: 20px;
+}
+.social-links a {
+  font-size: 30px;
+  color: #043aa7;
+
+  margin-right: 20px;
+}
+.social-links a:hover {
+  color: tomato;
+}
