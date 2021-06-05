@@ -576,6 +576,7 @@ div.Parc-Longchamp:hover {
   grid-template-columns: 1fr 1fr 1fr;
   padding-left: 30px;
   text-justify: auto;
+  margin-top: 25px;
 }
 .footer h1{
   font-size: 1.3em;
