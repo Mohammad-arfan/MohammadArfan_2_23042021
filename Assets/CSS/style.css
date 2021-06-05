@@ -622,7 +622,7 @@ div.Parc-Longchamp:hover {
   display:flex;
 flex-direction: column;
 align-items:flex-start ;
-font-size: 90%;
+font-size: 70%;
 margin-left: 5px;
  
 
@@ -640,7 +640,7 @@ margin-left: 5px;
 
 
   .Activities-marseille {
-    margin: 6px 0px;
+    margin: 10px 0px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
