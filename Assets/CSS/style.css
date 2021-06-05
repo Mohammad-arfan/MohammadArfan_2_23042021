@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
 * {
   font-family: "Raleway", sans-serif;
 }
+
 body {
   margin: 0px;
   padding: 0px;
@@ -43,16 +44,21 @@ nav li a
     padding: 30px 15px 0 25px;
     border-top: 2px solid transparent;
     text-decoration: none;
+    font-weight: 500;
+     
 }
 
 #navins 
 {
     color: #0065FC;
     margin: 0;
+    font-weight: bolder;
 }
 #navheb{
   border-top: #0065FC solid 3px;
   color: #0065FC;
+     font-weight: normal;
+  
 }
 
 nav a:hover
@@ -172,25 +178,24 @@ input[type="submit"]:hover {
   margin: 0 15px;
   align-items: center;
   border-radius: 25px;
- 
-
 }
+
+.eco:hover,.fam:hover,.rom:hover,.Animaux:hover{
+   background-color: #f2f2f2;
+}
+
 .filtres-con a{
   text-decoration: none;
   color: #000000;
   font-weight: bold;
- 
 }
 
 
 .filtres-con p{
-
   margin: 0%;
-
  padding: 5px 15px 5px 10px;
-
-
 }
+
 .fa-child,.fa-dog,.fa-heart,
 .fa-money-bill-wave {
   color: #0065fc;
@@ -200,24 +205,14 @@ input[type="submit"]:hover {
   border-radius: 25px;
 
 }
-
-
-.fa-child:hover {
-  background-color: #f2f2f2;
-}
-.fa-dog:hover {
-  background-color: #f2f2f2;
+.fa-child:hover,.fa-dog:hover,.fa-heart:hover,
+.fa-money-bill-wave:hover{
+   background-color: #f2f2f2;
 }
 
-.fa-heart:hover {
-  background-color: #f2f2f2;
-}
-.fa-money-bill-wave:hover {
-  background-color: #f2f2f2;
-}
-.fa-child:hover {
-  background-color: #f2f2f2;
-}
+
+
+
 .plus-info{
   padding-bottom: 15px;
 }
@@ -238,12 +233,10 @@ input[type="submit"]:hover {
 
   margin: 15px 0 10px 20px;
   padding-top: 10px;
+  font-size: 1.3em;
 
 }
-#Hébergements-titre h1{
-font-size: 2em;
-margin: 0px;
-}
+
 
 .Hebergement-main-container{
   background-color: #f2f2f2;
@@ -309,7 +302,7 @@ div.desc p{
    font-size: 10px;
 }
 
-div.afficher-pls {
+.afficher-pls {
   
  padding-left: 25px;
 
@@ -348,7 +341,7 @@ margin-right: 10px;
   align-items: center;
 
   margin: 10px;
-  position: relative;
+
 }
 
 .chambre-pop img {
@@ -373,7 +366,7 @@ flex-direction: column;
 .pop_contenu h3{
  
   font-size:1.0em;
-  font-weight: 800;
+  font-weight: 600;
  
 
 }
@@ -384,7 +377,8 @@ flex-direction: column;
 
 h2.Title_pop {
   text-align: left;
-  font-weight: 700;
+  font-weight: 900;
+  font-size: 1.3em;
   margin: 10px 0 10px 15px;
   
 }
@@ -396,7 +390,8 @@ h2.Title_pop {
 
 /*Activities----------------------*/
 .Title-Activites {
-  padding-left: 25px;
+  padding-left: 20px;
+  font-size: 1.3em;
 }
 .Activities-marseille {
   margin: 0px 15px 20px 15px;
@@ -484,6 +479,7 @@ h2.Title_pop {
 .Iles-du-Frioul img {
   width: 100%;
   height: 145px;
+  object-position: top;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -584,6 +580,105 @@ div.Parc-Longchamp:hover {
 .footer h1{
   font-size: 1.3em;
 }
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1100px){
+  #Hebergement{
+    width: 100%;
+     display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  }
+  .Hebergement-main-container{
+  background-color: #f2f2f2;
+  width: 100%;
+  border-radius: 25px;
+  margin: 0px 15px;
+
+}
+#Pop_Fiche {
+  background-color: #f2f2f2;
+  border: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  margin: 15px;
+
+
+
+
+}
+.pop_contenu{
+ margin: 0em;
+ padding:0em ;
+  display:flex;
+flex-direction: column;
+align-items:flex-start ;
+font-size: 90%;
+margin-left: 5px;
+ 
+
+ 
+
+}
+.pop-wrap{
+  display: flex;
+  flex-direction: row;
+}
+.fa-chart-line {
+  float: right;
+  padding-right: 50px;
+}
+
+
+  .Activities-marseille {
+    margin: 6px 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: autofit(3, 1.5fr);
+    grid-template-areas:
+      "Vieux-Port Fort-de-Pomégues"
+      
+      "Iles-du-Frioul Parc-National"
+  
+      "Notre-dame Parc-Longchamp"
+      ;
+  }
+
+
+.Vieux-Port img {
+    width: 99.5%;
+    height: 150px;
+
+    object-fit: cover;
+    margin: 0%;
+    padding-left: 0%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+.Parc-National img {
+    width: 99.5%;
+    height: 150px;
+
+    object-fit: cover;
+    margin: 0%;
+    padding-left: 0%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+
+
+
+
 @media screen and (max-width: 700px) {
 
 
@@ -805,4 +900,5 @@ padding-top: 20px;
   }
   }
 
+}
 }
