@@ -868,7 +868,7 @@ padding-top: 20px;
   @media only screen and (max-width: 500px) {
     .Activities-marseille {
       margin: 6px 0px;
-      width: 90%;
+      width: 100%;
       display: grid;
 
       grid-template-columns: 1fr;
