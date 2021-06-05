@@ -685,13 +685,13 @@ margin-left: 5px;
 
  .Chambres {
  
-    width: 100%;
+    width:95%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
     box-shadow: #c2c0c0 5px 5px 10px;
-  
+    
   }
   #Hebergement {
 
