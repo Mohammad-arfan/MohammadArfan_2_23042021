@@ -625,9 +625,6 @@ align-items:flex-start ;
 font-size: 70%;
 margin-left: 5px;
  
-
- 
-
 }
 .pop-wrap{
   display: flex;
@@ -727,6 +724,14 @@ padding-top: 20px;
   border-radius: 20px;
  
 } 
+.pop-wrap{
+  display: flex;
+  flex-direction: column;
+}
+.pop_contenu{
+  font-size: 100%;
+  margin-left: 10px;
+}
 
 }
   @media only screen and (max-width: 500px) {
@@ -835,6 +840,10 @@ padding-top: 20px;
   border-radius: 20px;
  
 } 
+.pop-wrap{
+  display: flex;
+  flex-direction: column;
+}
 
 
 }
