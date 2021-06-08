@@ -305,6 +305,8 @@ div.desc p{
 .afficher-pls {
   
  padding-left: 25px;
+ padding-top:10px ;
+ font-size: 0.8em;
 
 
 }
@@ -740,6 +742,7 @@ padding-top: 20px;
       box-sizing: border-box;
     }
     
+     
     #logo_nav img 
     {
         padding-left: 0px;
