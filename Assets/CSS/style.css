@@ -55,6 +55,7 @@ header {
 
 #navbar-link-sign-up a {
   color: #0065fc;
+
 }
 
 .navbar a {
@@ -96,22 +97,25 @@ header {
   grid-area: sign-up;
   color: #0065fc;
   font-weight: 600;
+
 }
 
 .navbar .active-link {
   color: #0065fc;
 }
-
+main {
+  width: 98%;
+  max-width: 1440px;
+  margin: auto;
+}
 
 /*serach box et fitres styling!!!!!!!!!!!!!!!!!!!*/
 #Search-box {
  margin: 0px 15px;
 }
  #Search-box h1 {
-   font-size: 1.2em;
-  font-weight: bold;
-  margin-left: 0%;
-  padding-left: 0%;
+    font-size: 32px;
+  margin: 10px 0;
  
   
 }
@@ -142,7 +146,7 @@ input[type="text"] {
   border: #f2f2f2 solid 1px;
   outline: #f2f2f2;
   font-size: 15px;
-  font-weight: 900;
+  font-weight: 600;
   padding: 0px 20px;
   position: relative;
   left: -5px;
@@ -163,10 +167,12 @@ input[type="submit"] {
   left: -10px;
   transition: 0.5s ease-in-out;
 }
-
+input[type="text"]:hover{
+    border: #f2f2f2 solid 2px;
+}
 input[type="submit"]:hover {
-  background-color: #136df5;
-  color: #000000;
+  background-color: #0c60df;
+  color: #fff;
 }
 .BTN {
   max-width: 500px;
@@ -629,10 +635,18 @@ div.Parc-Longchamp:hover {
 
 
 
+@media screen and (max-width: 1200px) {
+  main {
+    width: 95%;
+  }
+}
 
 
 
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 1000px){
+    main {
+    width: 92%;
+  }
   #Hebergement{
     width: 100%;
      display: flex;
@@ -806,6 +820,7 @@ padding-top: 20px;
     display: flex;
     justify-content: flex-end;
     grid-area: navbar-link-sign-up;
+    margin-right: 0%;
   }
 
     
