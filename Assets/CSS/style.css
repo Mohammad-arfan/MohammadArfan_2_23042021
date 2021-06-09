@@ -1,72 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
-* {
+body{
   font-family: "Raleway", sans-serif;
+  margin: 0;
 }
 
-body {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-} /* Nav bar and logo */
-
-
-
-#logo_nav
-{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 35px;
-    margin-top: 0;
+a {
+  text-decoration: none;
+  color: initial;
 }
 
-#logo_nav img
-{
-    padding: 20px 20px 20px 25px;
-
+header {
+  width: 98%;
+  max-width: 1440px;
+  margin: auto;
 }
 
-/* Navigation */
 
-#logo_nav nav ul{
-    margin-top: 0%;
-    list-style-type: none;
-    display: flex;
-    position: absolute;
-    right: 5px;
+
+.navbar {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo . accomodation activities sign-up";
 }
 
-nav li a
-{
-    display: block;
-    color: black;
-    padding: 30px 15px 0 25px;
-    border-top: 2px solid transparent;
-    text-decoration: none;
-    font-weight: 500;
-     
+#logo {
+  padding: 0;
 }
 
-#navins 
-{
-    color: #0065FC;
-    margin: 0;
-    font-weight: bolder;
-}
-#navheb{
-  border-top: #0065FC solid 3px;
-  color: #0065FC;
-     font-weight: normal;
-  
+.navbar .navbar-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-nav a:hover
-{
-    color: #0065FC;
-    border-top: 3px solid #0065FC;
+
+.navbar .navbar-link .underline-effect {
+  width: 100%;
+  height: 3px;
+  background: white;
 }
 
+.navbar #navbar-link-accomodation > .underline-effect {
+  background: #0065fc;
+}
+
+.navbar #navbar-link-activities:hover > .underline-effect {
+  background: #0065fc;
+}
+
+#navbar-link-sign-up a {
+  color: #0065fc;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 25px;
+}
+
+.navbar a:visited {
+  color: #0065fc;
+}
+
+.navbar img {
+  grid-area: logo;
+}
+
+.navbar #navbar-link-accomodation {
+  grid-area: accomodation;
+}
+
+#navbar-link-accomodation a {
+  color: #0065fc;
+}
+
+.navbar #navbar-link-activities {
+  grid-area: activities;
+  color: black;
+}
+
+.navbar #navbar-link-activities a {
+  color: black;
+}
+
+.navbar #navbar-link-activities a:hover {
+  color: #0065fc;
+}
+
+.navbar #navbar-link-sign-up {
+  grid-area: sign-up;
+  color: #0065fc;
+  font-weight: 600;
+}
+
+.navbar .active-link {
+  color: #0065fc;
+}
 
 
 /*serach box et fitres styling!!!!!!!!!!!!!!!!!!!*/
@@ -587,7 +621,7 @@ div.Parc-Longchamp:hover {
   text-justify: auto;
   margin-top: 25px;
 }
-.footer h1{
+.footer h3{
   font-size: 1.3em;
 }
 
@@ -745,81 +779,38 @@ padding-top: 20px;
 
 }
   @media only screen and (max-width: 500px) {
-    *{
-      box-sizing: border-box;
-    }
+
+ .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "logo navbar-link-sign-up"
+    "navbar-link-accomodation navbar-link-activities";
+  }
+  .navbar img {
+    grid-area: logo;
+  }
+  .navbar #navbar-link-accomodation {
+    flex-direction: column-reverse;
+    grid-area: navbar-link-accomodation;
+  }
+  .navbar #navbar-link-activities {
+    flex-direction: column-reverse;
+    grid-area: navbar-link-activities;
+  }
+  .navbar #navbar-link-activities .underline-effect {
+    background-color: #dbdbdb;
+  }
+  .navbar #navbar-link-sign-up {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: navbar-link-sign-up;
+  }
+
     
-     
-    #logo_nav img 
-    {
-        padding-left: 0px;
-    }
 
-    #logo_nav nav ul
-    {
-        position: static;
-       
-    }
 
-    #navins
-    {
-        position: absolute;
-        right: 5px;
-        text-decoration: none;
-    }
-    
-    #navheb
-    {
-        position: absolute;
-        top: 51px;
-        padding: 30px 35px 10px 45px;
-        right: 50%;
-        border-bottom: 2px #F2F2F2 solid;
-    }
-
-    #navheb strong
-    {
-        margin-bottom: 0px;
-        font-weight: bolder;
-        font-size: 90%;
-        color: #136df5;
-    }
-
-    #navact
-    {
-        position: absolute;
-        top: 49px;
-        right: 0px;
-        left: 50%;
-        padding: 30px 10px 10px 50px;
-        margin-bottom: 10px;
-        border-bottom: 2px #F2F2F2 solid;
-    }
-
-    #navact strong
-    {
-        margin-bottom: 0px;
-        font-weight: bolder;
-        font-size: 90%;
-    }
-
-    #navheb:hover
-    {
-        border-top: none;
-        border-bottom: 4px #0065FC solid;
-    }
-#navheb{
-  border-top: none;
-}
-    #navact:hover
-    {
-        border-top: none;
-        border-bottom: 4px #0065FC solid;
-    }
-#navins{
- margin-right: 0px;
- padding: 30px 0px 0 0;
-}
 
   input[type="submit"] {
     display: none;

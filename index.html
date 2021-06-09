@@ -16,28 +16,26 @@
   </head>
 
   <body>
+    <!-- Section 1 Navbar -->
     <header>
-      <!--ici nav et logo commerce*********************-->
-      <div id="logo_nav">
-        <img src="Images/logo/Reservia.svg" alt="Logo Reservia" />
-
-        <nav>
-          <ul>
-            <li>
-              <a href="#Hebergement" id="navheb"
-                ><strong>Hébergements</strong></a
-              >
-            </li>
-            <li>
-              <a href="#Activites" id="navact"><strong>Activités</strong></a>
-            </li>
-            <li>
-              <a href="#" id="navins"><strong>S'inscrire</strong></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="navbar">
+        <a href="index.html" id="logo"
+          ><img src="Images/logo/Reservia.svg" alt="logo" class="logo"
+        /></a>
+        <div class="navbar-link active-link" id="navbar-link-accomodation">
+          <div class="underline-effect"></div>
+          <a href="#blocs">Hébergement</a>
+        </div>
+        <div class="navbar-link" id="navbar-link-activities">
+          <div class="underline-effect"></div>
+          <a href="#title-activities">Activités</a>
+        </div>
+        <div class="navbar-link login" id="navbar-link-sign-up">
+          <a href="#">S'inscrire</a>
+        </div>
+      </nav>
     </header>
+
     <!--section search boit et filtre-->
     <section id="Search-box">
       <h1>Trouvez votre hébergement pour des vacances de reve</h1>
@@ -98,7 +96,7 @@
     <!-- section Hebergement à marseille-->
     <section id="Hebergement">
       <div class="Hebergement-main-container">
-        <h1 id="Hébergements-titre">Hébergements à Marseille</h1>
+        <h2 id="Hébergements-titre">Hébergements à Marseille</h2>
 
         <a href="#" class="Chambres">
           <img
@@ -299,7 +297,7 @@
 
     <!--section Activitiesà marsaille a commercer ici-->
     <section id="Activites">
-      <h1 class="Title-Activites">Activités à Marseille</h1>
+      <h3 class="Title-Activites">Activités à Marseille</h3>
       <!--tete de activities-->
 
       <div class="Activities-marseille">
@@ -379,18 +377,18 @@
     <!--This is Footer-->
     <footer class="footer">
       <div class="footer1">
-        <h1>A propos</h1>
+        <h3>A propos</h3>
         <p>Fonctionnement du site</p>
         <p>conditions générales de vente</p>
         <p>Données et confidentialité</p>
       </div>
       <div class="footer2">
-        <h1>Nos hébergements</h1>
+        <h3>Nos hébergements</h3>
         <p>Charte qualité</p>
         <p>Soumettre votre hôtel</p>
       </div>
       <div class="footer3">
-        <h1>Assistance</h1>
+        <h3>Assistance</h3>
         <p>Centre d'aide</p>
         <p>Nous contacter</p>
       </div>
