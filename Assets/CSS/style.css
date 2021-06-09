@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
 
 body{
   font-family: "Raleway", sans-serif;
@@ -318,8 +318,8 @@ padding-left: 10px;
   font-size: .9em;
 }
  .desc strong{
-    font-family: Raleway;
-font-weight: 800;
+font-family: Raleway;
+font-weight: 700;
 font-size: 1.0em;
 }
 div.desc p{
@@ -409,7 +409,7 @@ flex-direction: column;
 .pop_contenu h3{
  
   font-size:1.0em;
-  font-weight: 600;
+  font-weight: 700;
  
 
 }
@@ -431,7 +431,7 @@ h2.Title_pop {
   padding-right: 20px;
 }
 
-/*Activities----------------------*/
+/*---Activities--*/
 .Title-Activites {
   padding-left: 20px;
   font-size: 1.3em;
@@ -605,7 +605,7 @@ div.Parc-Longchamp:hover {
 }
 .info {
   padding: 10px 5px 25px 15px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: left;
 }
 .info a {
