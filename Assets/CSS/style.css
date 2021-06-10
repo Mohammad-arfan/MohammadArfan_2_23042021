@@ -1,6 +1,6 @@
 
 
-body{
+body {
   font-family: "Raleway", sans-serif;
   margin: 0;
 }
@@ -635,17 +635,11 @@ div.Parc-Longchamp:hover {
 
 
 
-@media screen and (max-width: 1200px) {
+
+
+@media only screen and (max-width: 1200px){
   main {
     width: 95%;
-  }
-}
-
-
-
-@media only screen and (max-width: 1000px){
-    main {
-    width: 92%;
   }
   #Hebergement{
     width: 100%;
@@ -666,8 +660,8 @@ div.Parc-Longchamp:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
-
-  margin: 15px;
+justify-content: center;
+  margin: 15px 0;
 
 
 
@@ -776,10 +770,10 @@ padding-top: 20px;
   #Pop_Fiche {
   background-color: #f2f2f2;
   border: none;
-  padding: 0px 10px;
-  margin:5px 10px ;
+ 
+  margin:5px 0px ;
   width: 100%;
-  border-radius: 20px;
+
  
 } 
 .pop-wrap{
@@ -851,15 +845,16 @@ padding-top: 20px;
   #Pop_Fiche {
   background-color: #f2f2f2;
   border: none;
-  padding: 0px 10px;
-  margin:5px 10px ;
+
+  margin:5px 0px ;
   width: 100%;
-  border-radius: 20px;
+
  
 } 
 .pop-wrap{
   display: flex;
   flex-direction: column;
+
 }
 
 
