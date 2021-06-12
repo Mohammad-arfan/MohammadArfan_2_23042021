@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hebergement de marsaille</title>
+    <title>Reservia</title>
     <link rel="stylesheet" href="Assets/CSS/style.css" />
 
     <link
@@ -43,13 +43,15 @@
     <main>
       <!--section search boit et filtre-->
       <section id="Search-box">
-        <h1>Trouvez votre hébergement pour des vacances de reve</h1>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou pleine nature</p>
 
         <div class="search-box1">
           <form action="#">
-            <button class="btn"><i class="fas fa-map-marker-alt"></i></button>
-            <input type="text" value="Marseille,France" />
+            <button class="btn">
+              <i class="fas fa-map-marker-alt"></i>
+            </button>
+            <input type="text" value="Marseille, France" />
 
             <button class="BTN" type="submit">
               <i class="fas fa-search"></i>
@@ -225,7 +227,7 @@
               </p>
             </div>
           </a>
-          <div class="afficher-pls"><h2>Afficher plus</h2></div>
+          <p class="afficher-plus"><a href="#">Afficher plus</a></p>
         </div>
         <!--plus populaire aside div ici commercer-->
 
@@ -241,16 +243,20 @@
               />
 
               <div class="pop_contenu">
-                <h3>Hôtel Le soleil du matin</h3>
-                <p class="prix">Nuit à partir de <strong>128&euro;</strong></p>
+                <div class="hotel-prix">
+                  <h3>Hôtel Le soleil du matin</h3>
+                  <p class="prix">
+                    Nuit à partir de <strong>128&euro;</strong>
+                  </p>
+                </div>
 
-                <p class="Etoile">
+                <div class="etoile">
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star checked"></i>
-                </p>
+                </div>
               </div>
             </a>
             <a href="#" class="chambre-pop">
@@ -260,19 +266,22 @@
               />
 
               <div class="pop_contenu">
-                <h3>
-                  Au coeur de l'eau <br />
-                  Chambres d'hôtes
-                </h3>
-                <p class="prix">Nuit à partir de <strong> 71&euro;</strong></p>
-
-                <p class="Etoile">
+                <div class="hotel-prix">
+                  <h3>
+                    Au cœur de l'eau <br />
+                    Chambres d'hôtes
+                  </h3>
+                  <p class="prix">
+                    Nuit à partir de <strong> 71&euro;</strong>
+                  </p>
+                </div>
+                <div class="etoile">
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star"></i>
-                </p>
+                </div>
               </div>
             </a>
             <a href="#" class="chambre-pop">
@@ -283,19 +292,21 @@
               />
 
               <div class="pop_contenu">
-                <h3>
-                  Hôtel Tout bleu et <br />
-                  Blanc
-                </h3>
-                <p class="prix">Nuit à partir de <strong>68&euro;</strong></p>
+                <div class="hotel-prix">
+                  <h3>
+                    Hôtel Tout bleu et <br />
+                    Blanc
+                  </h3>
+                  <p class="prix">Nuit à partir de <strong>68&euro;</strong></p>
+                </div>
 
-                <p class="Etoile">
+                <div class="etoile">
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star"></i>
-                </p>
+                </div>
               </div>
             </a>
           </div>

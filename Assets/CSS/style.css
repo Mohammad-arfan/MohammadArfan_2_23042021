@@ -1,5 +1,6 @@
-
-
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
@@ -29,6 +30,10 @@ header {
 
 #logo {
   padding: 0;
+  padding-left: 15px;
+}
+#logo img{
+  width: 130px;
 }
 
 .navbar .navbar-link {
@@ -41,7 +46,7 @@ header {
 
 .navbar .navbar-link .underline-effect {
   width: 100%;
-  height: 3px;
+  height: 2px;
   background: white;
 }
 
@@ -74,6 +79,7 @@ header {
 
 .navbar #navbar-link-accomodation {
   grid-area: accomodation;
+  font-weight: 600;
 }
 
 #navbar-link-accomodation a {
@@ -83,6 +89,7 @@ header {
 .navbar #navbar-link-activities {
   grid-area: activities;
   color: black;
+  font-weight: 600;
 }
 
 .navbar #navbar-link-activities a {
@@ -136,6 +143,7 @@ main {
   background-color: #f2f2f2;
   position: relative;
   font-weight: 900;
+  
 }
 
 input[type="text"] {
@@ -146,17 +154,18 @@ input[type="text"] {
   border: #f2f2f2 solid 1px;
   outline: #f2f2f2;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 0px 20px;
   position: relative;
   left: -5px;
   border-right: none;
+  font-family: raleway;
 }
 
 input[type="submit"] {
   position: relative;
   border-radius: 0 12px 12px 0;
-  width: 120px;
+  width: 135px;
   height: 45px;
   border: none;
   cursor: pointer;
@@ -165,6 +174,9 @@ input[type="submit"] {
   color: #f2f2f2;
   font-weight: bold;
   left: -10px;
+  font-family: raleway;
+  font-size: 16px;
+
   transition: 0.5s ease-in-out;
 }
 input[type="text"]:hover{
@@ -280,10 +292,12 @@ input[type="submit"]:hover {
 
 .Hebergement-main-container{
   background-color: #f2f2f2;
-  width: 65%;
+  width:65%;
   border-radius: 25px;
   margin: 0px 15px;
-  position: relative;
+
+padding-left: 15px;
+
 }
 .Hebergement-main-container a img{
     width:100%;
@@ -305,7 +319,7 @@ border: #fff 4px solid;
 width: 30%;
 height: 190px;
 border-radius: 20px;
-float: left; 
+float: left;
 margin: 10px;
 background: #fff;
 box-shadow: #c2c0c0 5px 5px 10px;
@@ -345,18 +359,17 @@ div.desc p{
   padding: 0px;
    font-size: 10px;
 }
-
-.afficher-pls {
-  
- padding-left: 25px;
- padding-top:10px ;
- font-size: 0.8em;
-
+.afficher-plus a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding-top: 10px;
 
 }
-* {
-  box-sizing: border-box;
+ p.afficher-plus {
+margin: 20px 0 0 25px;
 }
+
 
 /* populaire  div commerce ici*/
 #Pop_Fiche {
@@ -380,14 +393,11 @@ margin-right: 10px;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
- 
+ position: relative;
   box-shadow: #c2c0c0 5px 5px 10px;
   transition: ease-out 0.3s;
   background-color: #ffffff;
-  align-items: center;
-
   margin: 10px;
-
 }
 .chambre-pop:hover{
   opacity: 0.6;
@@ -404,24 +414,18 @@ margin-right: 10px;
 }
 
 .pop_contenu{
- 
-  display:flex;
-flex-direction: column;
- padding: 5px 0 10px 15px;
 
- 
+padding: 10px 0 0 15px;
+}
+
+.hotel-prix h3{
+font-size:1.0em;
+font-weight: 700;
+margin-top: 0px;
 
 }
-.pop_contenu h3{
- 
-  font-size:1.0em;
-  font-weight: 700;
- 
-
-}
-.prix{
-
-  font-size: 0.9em;
+.hotel-prix p{
+margin-bottom: 30px;
 }
 
 h2.Title_pop {
@@ -529,6 +533,7 @@ h2.Title_pop {
   width: 100%;
   height: 145px;
   object-position: top;
+  object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -637,7 +642,7 @@ div.Parc-Longchamp:hover {
 
 
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1150px){
   main {
     width: 95%;
   }
@@ -661,19 +666,15 @@ div.Parc-Longchamp:hover {
   display: flex;
   flex-direction: column;
 justify-content: center;
-  margin: 15px 0;
-
-
-
-
+  margin: 15px 10px;
 }
 .pop_contenu{
- margin: 0em;
+ margin: 0.5em;
  padding:0em ;
   display:flex;
 flex-direction: column;
 align-items:flex-start ;
-font-size: 70%;
+font-size: 90%;
 margin-left: 5px;
  
 }
@@ -725,10 +726,36 @@ margin-left: 5px;
   }
 
 
+@media screen and (max-width: 900px){
+  #Pop_Fiche {
+  background-color: #f2f2f2;
+  border: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+  margin: 15px 10px;
+}
+.chambre-pop{
+  margin: 5px;
+}
+.pop_contenu{
+ margin: 0.5em;
+ padding:0em ;
+font-size: 80%;
+margin-left: 5px;
+ 
+}
+.pop-wrap{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0%;
+}
+}
 
 
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
 
 
 
@@ -758,23 +785,26 @@ margin-left: 5px;
   width: 100%;
   border-radius: 25px;
   margin: 10px 5px;
- 
+ float: left;
 }
+
+
+
+
 .afficher-pls {
   
 
 padding-top: 20px;
 
-
 }
-  #Pop_Fiche {
+#Pop_Fiche {
   background-color: #f2f2f2;
   border: none;
- 
-  margin:5px 0px ;
-  width: 100%;
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
 
- 
+
 } 
 .pop-wrap{
   display: flex;
@@ -784,11 +814,26 @@ padding-top: 20px;
   font-size: 100%;
   margin-left: 10px;
 }
-
+  .Activities-marseille {
+    margin: 6px 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: autofit(6, 1.5fr);
+    grid-template-areas:
+      "Vieux-Port"
+      "Fort-de-Pomégues"
+      "Iles-du-Frioul"
+      "Parc-National"
+      "Notre-dame"
+      "Parc-Longchamp";
+  }
 }
   @media only screen and (max-width: 500px) {
 
  .navbar {
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -798,14 +843,17 @@ padding-top: 20px;
   }
   .navbar img {
     grid-area: logo;
+    
   }
   .navbar #navbar-link-accomodation {
     flex-direction: column-reverse;
     grid-area: navbar-link-accomodation;
+    font-weight: 700;
   }
   .navbar #navbar-link-activities {
     flex-direction: column-reverse;
     grid-area: navbar-link-activities;
+      font-weight: 700;
   }
   .navbar #navbar-link-activities .underline-effect {
     background-color: #dbdbdb;
@@ -814,7 +862,9 @@ padding-top: 20px;
     display: flex;
     justify-content: flex-end;
     grid-area: navbar-link-sign-up;
-    margin-right: 0%;
+   font-weight:800;
+  position: absolute;
+  right: 15px;
   }
 
     
@@ -827,6 +877,12 @@ padding-top: 20px;
 
   .BTN {
     display: inline;
+
+  }
+  input[type="text"] {
+    width: 60%;
+    font-family: raleway;
+
   }
 .filtres-con{
  
@@ -854,28 +910,25 @@ padding-top: 20px;
 .pop-wrap{
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
 
+} 
+.fa-chart-line {
+  float: right;
+  padding-right: 10px;
 }
-
-
-}
-
-
-@media only screen and (max-width: 700px) {
-  .Activities-marseille {
-    margin: 6px 0px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: autofit(6, 1.5fr);
-    grid-template-areas:
-      "Vieux-Port"
-      "Fort-de-Pomégues"
-      "Iles-du-Frioul"
-      "Parc-National"
-      "Notre-dame"
-      "Parc-Longchamp";
+ .footer {
+    width: 100vw;
+    display: flex;
+justify-content: space-evenly;
   }
+
+
+}
+
+
+
 
   @media only screen and (max-width: 500px) {
     .Activities-marseille {
@@ -922,5 +975,4 @@ padding-top: 20px;
   }
   }
 
-}
 }
