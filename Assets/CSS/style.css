@@ -304,6 +304,7 @@ margin: 10px 0;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
  
 }
 .accomodation img{
@@ -319,15 +320,16 @@ a{
 
 }
 .room {
-    background: #fff;
-    border: #fff 4px solid;
-    border-radius: 20px;
-   width: 30%;
-   transition: ease-out .3s;
-    box-shadow: #dbd4d4 5px 5px 10px;
-   margin: 10px 0;
-  
+background-color: rgb(255, 255, 255);
+border: #ffffffef 4px solid;
+border-radius: 20px;
+width: 30%;
+transition: ease-out .3s;
+box-shadow: #dbd4d4 5px 5px 10px;
+margin: 10px 0;
+
 }
+
 .room:hover{
   transform: scale(1.02);
 }
@@ -382,6 +384,9 @@ padding: 10px;
     justify-content: space-between;
     margin:10px;
 }
+.fa-chart-line{
+  font-size: 20px;
+}
 .pop-wrap{
     width: 95%;
   display: flex;
@@ -395,7 +400,7 @@ margin: 10px;
    flex-direction: row;
     border-radius: 20px;
     background-color: #fff;
-    border: 2px solid #fff;
+    border: 3px solid #fbfbfb;
     margin: 10px 5px;
      box-shadow: #dbd4d4 5px 5px 10px;
      transition: ease-out .3s;
@@ -456,7 +461,7 @@ margin: 10px;
 }
 .Vieux-Port {
    grid-area: Vieux-Port;
-  width: 1fr;
+  width: 100%;
   border: none;
   margin: 0%;
   border-radius: 20px;
@@ -483,11 +488,10 @@ margin: 10px;
 
 .Fort-de-Pomégues {
   border: none;
-   width: 1fr;
+   width: 100%;
   grid-area: Fort-de-Pomégues;
   margin: 0%;
   border-radius: 20px;
-  text-align: center;
   box-shadow: #dbd4d4 5px 5px 10px;
   transition: ease-out 0.3s;
 }
@@ -508,7 +512,7 @@ margin: 10px;
 
 .Iles-du-Frioul {
   border: none;
-    width: 1fr;
+    width: 100%;
   grid-area: Iles-du-Frioul;
   margin: 0%;
   border-radius: 20px;
@@ -531,7 +535,7 @@ margin: 10px;
 }
 
 .Parc-National {
-    width: 1fr;
+    width: 100%;
   grid-area: Parc-National;
   text-align: left;
   border: none;
@@ -581,7 +585,7 @@ div.Parc-National:hover {
 
 .Parc-Longchamp {
   border: none;
-    width: 1fr;
+    width: 100%;
   grid-area: Parc-Longchamp;
   margin: 0%;
   border-radius: 20px;
@@ -685,7 +689,7 @@ justify-content: center;
     width: 95%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: autofit(3, 1.5fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
       "Vieux-Port Fort-de-Pomégues"
       
@@ -777,7 +781,7 @@ main{
     
   }
   .room {
-    background: #fff;
+    background: none;
     border: #fff 4px solid;
     border-radius: 20px;
    width: 100%;
@@ -833,7 +837,7 @@ margin: 0%;
     width: 95%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: autofit(6, 1.5fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
       "Vieux-Port"
       "Fort-de-Pomégues"
@@ -967,7 +971,7 @@ padding: 15px 0;
       display: grid;
 
       grid-template-columns: 1fr;
-      grid-template-rows: autofit(6, 1fr);
+      grid-template-rows: repeat(6,1fr);
       grid-template-areas:
         "Vieux-Port"
         "Fort-de-Pomégues"
