@@ -1,5 +1,7 @@
-* {
-  box-sizing: border-box;
+* { margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+font-family: "Raleway", sans-serif;
 }
 body {
   font-family: "Raleway", sans-serif;
@@ -10,6 +12,7 @@ a {
   text-decoration: none;
   color: initial;
 }
+/*header section */
 
 header {
   width: 98%;
@@ -17,9 +20,9 @@ header {
   margin: auto;
 }
 
+/*navbar*/
 
-
-.navbar {
+.navbar { 
   display: grid;
   justify-content: center;
   align-items: center;
@@ -30,7 +33,7 @@ header {
 
 #logo {
   padding: 0;
-  padding-left: 15px;
+
 }
 #logo img{
   width: 130px;
@@ -110,11 +113,7 @@ header {
 .navbar .active-link {
   color: #0065fc;
 }
-main {
-  width: 98%;
-  max-width: 1440px;
-  margin: auto;
-}
+
 
 /*serach box et fitres styling!!!!!!!!!!!!!!!!!!!*/
 #Search-box {
@@ -126,9 +125,13 @@ main {
  
   
 }
-#Search-box~p {
+.en-plain {
   font-weight: 500;
   font-size: 0.99rem;
+ padding: 0 0 10px 0;
+}
+.search-box1 {
+  margin: 10px 0;
 }
 .btn { 
   width: 45px;
@@ -236,17 +239,18 @@ input[type="submit"]:hover {
    background-color: #f2f2f2;
 }
 
-.filtres-con a{
+.filtres-con  a{
   text-decoration: none;
   color: #000000;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 
-.filtres-con p{
+.filtres-con  p{
   margin: 0%;
  padding: 5px 15px 5px 10px;
 }
+
 
 .fa-child,.fa-dog,.fa-heart,
 .fa-money-bill-wave {
@@ -267,6 +271,7 @@ input[type="submit"]:hover {
 
 .plus-info{
   padding-bottom: 15px;
+  font-weight: 500;
 }
 .fa-info {
   border: 2px solid #deebff;
@@ -275,182 +280,161 @@ input[type="submit"]:hover {
   font-weight: 400;
   color: #0065fc;
 }
-/* section hebergement comercer ici */
-#Hebergement {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+/* section hebergement commercer ici */
+
+#main-accomodation-container {
+display: flex;
+flex-direction: row;
+width: 100%;
+box-sizing: border-box;
+justify-content: space-around;
+margin: 10px 0;
 }
-#Hébergements-titre {
-
-  margin: 15px 0 10px 20px;
-  padding-top: 10px;
-  font-size: 1.3em;
-
-}
-
-
-.Hebergement-main-container{
-  background-color: #f2f2f2;
-  width:65%;
-  border-radius: 25px;
-  margin: 0px 15px;
-
-padding-left: 15px;
-
-}
-.Hebergement-main-container a img{
-    width:100%;
-  height: 110px;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  object-fit: cover;
-  object-position:center;
-
-   
-}
-.Hebergement-main-container a {
-text-decoration: none;
-color: #000000;
-
-}
-.Chambres{
-border: #fff 4px solid;
-width: 30%;
-height: 190px;
-border-radius: 20px;
-float: left;
-margin: 10px;
-background: #fff;
-box-shadow: #c2c0c0 5px 5px 10px;
-  transition: ease-out 0.3s;
-}
-.Chambres:hover{
-  opacity: 0.8;
-}
-.desc{
-padding-left: 10px;
-
-
-}
-
-.prix{
-  font-size: .9em;
-}
- .desc strong{
-font-family: Raleway;
-font-weight: 700;
-font-size: 1.0em;
-}
-div.desc p{
-   margin: 0px;
-   padding: 0px;
- }
-.fa-star {
-  color: #d3d2d2;
-  font-size: 10px;
+.main-accomodation{
+    width: 65%;
+    background: #f2f2f2;
+    border-radius: 20px;
   
+}
+.title{
+    padding: 15px 0 10px 30px;
+}
+.accomodation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+ 
+}
+.accomodation img{
+    width: 100%;
+     height: 130px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
 
 }
-
-.checked {
-  color: #136df5;
-  margin: 0px;
-  padding: 0px;
-   font-size: 10px;
+.room {
+    background: #fff;
+    border: #fff 4px solid;
+    border-radius: 20px;
+   width: 30%;
+   transition: ease-out .3s;
+    box-shadow: #dbd4d4 5px 5px 10px;
+   margin: 10px 0;
+  
 }
-.afficher-plus a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  padding-top: 10px;
+.room:hover{
+  transform: scale(1.02);
+}
+.info-room {
+    padding: 10px;
+
+    
+}
+.info-room h3{
+font-size: 16px;
+font-weight: 800;
+}
+.info-room h3,p{
+color: #000;
+
+font-family: raleway;
+}
+.fa-star{
+    color: #c2c0c0;
+     font-size: 12px;
+}
+.checked{
+      color: #136df5;
+      padding-bottom: 5px;
+      font-size: 12px;
+}
+.afficher_plus {
+padding:0 0 15px 15px;
+}
+.afficher_plus a{
+    padding-left: 30px;
+   margin-top: 15px;
+   padding-bottom: 15px;
+    color: #000;
+}
+
+
+
+/*Div most populaire commerce ici*/
+
+#Pop_Fiche{
+    width: 30%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+padding: 10px;
+
 
 }
- p.afficher-plus {
-margin: 20px 0 0 25px;
+.title_pop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:10px;
 }
-
-
-/* populaire  div commerce ici*/
-#Pop_Fiche {
-  background-color: #f2f2f2;
-  border: none;
-  width: 32%;
+.pop-wrap{
+    width: 95%;
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
-margin-right: 10px;
-  padding: 15px;
-}
-#Pop_Fiche a{
-  text-decoration: none;
-  color: #000000;
-}
-.chambre-pop {
-  width: 90%;
-  height: 9.2rem;
-  border: 3px solid #ffffff;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: row;
- position: relative;
-  box-shadow: #c2c0c0 5px 5px 10px;
-  transition: ease-out 0.3s;
-  background-color: #ffffff;
-  margin: 10px;
-}
-.chambre-pop:hover{
-  opacity: 0.6;
-}
+margin: 10px;
 
-.chambre-pop img {
-  width: 45%;
-  height: 100%;
-  align-items: center;
- border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  object-fit: cover;
-  object-position: bottom-right;
-}
-
-.pop_contenu{
-
-padding: 10px 0 0 15px;
-}
-
-.hotel-prix h3{
-font-size:1.0em;
-font-weight: 700;
-margin-top: 0px;
 
 }
-.hotel-prix p{
-margin-bottom: 30px;
+.chambre-populaire{
+    display: flex;
+   flex-direction: row;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    margin: 10px 5px;
+     box-shadow: #dbd4d4 5px 5px 10px;
+     transition: ease-out .3s;
+}
+.chambre-populaire:hover{
+  transform: scale(1.02);
+}
+.chambre-populaire img{
+    width: 45%;
+    height: 140px;
+    border-top-left-radius:20px; 
+        border-bottom-left-radius:20px; 
+        object-fit: cover;
+        object-position: right;
+}
+.pop_info{
+    display: flex;
+    flex-direction: column;
+ justify-content: space-between;
+ padding: 10px;
+}
+.pop_info h3{
+    color: #000;
+    font-size: 16px;
+    font-weight: 800;
 }
 
-h2.Title_pop {
-  text-align: left;
-  font-weight: 900;
-  font-size: 1.3em;
-  margin: 10px 0 10px 15px;
-  
+/*-----------section Activities---------- */
+#Activites{
+  margin:15px 10px;
 }
-
-.fa-chart-line {
-  float: right;
-  padding-right: 20px;
-}
-
-/*---Activities--*/
 .Title-Activites {
-  padding-left: 20px;
-  font-size: 1.3em;
+  padding:20px;
+  font-size: 1.5em;
 }
 .Activities-marseille {
   margin: 0px 15px 20px 15px;
-  width: 95%;
+  width: 98%;
   height: 100%;
-  padding-left: 10px;
+
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(4, 4fr);
@@ -628,69 +612,74 @@ div.Parc-Longchamp:hover {
   background-color: #f2f2f2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-left: 30px;
+  padding:30px;
   text-justify: auto;
   margin-top: 25px;
 }
 .footer h3{
   font-size: 1.3em;
 }
+.footer p{
+  padding: 5px;
+}
 
 
 
 
+/*breakpoint started ici*/
 
+@media only screen and (max-width: 1200px){
 
+  .eco,.fam,.rom,.Animaux{
+  margin: 5px;
+}
 
-@media only screen and (max-width: 1150px){
-  main {
-    width: 95%;
-  }
-  #Hebergement{
+#main-accomodation-container{
     width: 100%;
      display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: flex-start;
-  }
-  .Hebergement-main-container{
-  background-color: #f2f2f2;
-  width: 100%;
-  border-radius: 25px;
-  margin: 0px 15px;
 
+  }
+.main-accomodation{
+  background-color: #f2f2f2;
+  width: 98%;
+  border-radius: 25px;
+ margin: 10px;
+}
+.afficher_plus {
+padding:0 0 15px 15px;
 }
 #Pop_Fiche {
   background-color: #f2f2f2;
   border: none;
-  width: 100%;
+  width: 98%;
   display: flex;
   flex-direction: column;
 justify-content: center;
   margin: 15px 10px;
 }
-.pop_contenu{
- margin: 0.5em;
- padding:0em ;
-  display:flex;
-flex-direction: column;
-align-items:flex-start ;
-font-size: 90%;
-margin-left: 5px;
- 
-}
+
 .pop-wrap{
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+ width: 98%;
+ margin: 0 5px;
+}
+.chambre-populaire{
+    display: flex;
+  
 }
 .fa-chart-line {
   float: right;
-  padding-right: 50px;
+  padding-right: 30px;
 }
 
 
   .Activities-marseille {
-    margin: 10px 0px;
-    width: 100%;
+    margin: 10px 10px;
+    width: 95%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: autofit(3, 1.5fr);
@@ -726,74 +715,90 @@ margin-left: 5px;
   }
 
 
-@media screen and (max-width: 900px){
-  #Pop_Fiche {
-  background-color: #f2f2f2;
-  border: none;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-justify-content: center;
-  margin: 15px 10px;
+@media screen and (max-width: 960px){
+*{
+  box-sizing: border-box;
 }
-.chambre-pop{
-  margin: 5px;
-}
-.pop_contenu{
- margin: 0.5em;
- padding:0em ;
-font-size: 80%;
-margin-left: 5px;
+    .accomodation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
  
 }
-.pop-wrap{
+.room{
+  width: 45%;
+}
+.main-accomodation{
+    width:98%;
+    align-items: center;
+    justify-content: center;
+  background: #fff; 
+}
+
+    #Pop_Fiche {
+      width: 100%;
+      border-radius: 0%;
+      margin: 0%;
+    }
+ 
+
+    .pop-wrap{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 100%;
   margin: 0%;
+  font-size: 90%;
 }
+
+
 }
 
 
 @media screen and (max-width: 768px) {
 
-
-
-
-
- .Chambres {
- 
-    width:95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    box-shadow: #c2c0c0 5px 5px 10px;
-    margin:10px 0 ;
-    
-  }
-  #Hebergement {
-
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-
-.Hebergement-main-container {
-  background-color: #fff;
+main{
   width: 100%;
-
-
 }
 
 
-.afficher-pls {
+
+ .accomodation {
+ 
+    width:98%;
+    display: flex;
+    flex-direction: column;
+ align-items: center;
+ 
+    
+  }
+  .room {
+    background: #fff;
+    border: #fff 4px solid;
+    border-radius: 20px;
+   width: 100%;
+   transition: ease-out .3s;
+   margin: 10px 0;
+    box-shadow: #dbd4d4 5px 5px 10px;
+  width: 100%;
+
+}
+
+  #main-accomodation-container{
+    width: 100%;
+     display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+
+  }
+  .title{
+    padding: 15px 0 10px 15px;
+}
   
-
-padding-top: 20px;
-
+.afficher_plus a{
+ padding: 0;
+ margin: 0%;
 }
 #Pop_Fiche {
   background-color: #f2f2f2;
@@ -801,10 +806,10 @@ padding-top: 20px;
   width: 100%;
   display: flex;
   flex-direction: column;
-
+margin: 0%;
 
 } 
-.chambre-pop{
+.chambre-populaire{
   margin: 10px 0;
   width: 100%;
 }
@@ -813,13 +818,16 @@ padding-top: 20px;
   flex-direction: column;
 
 }
-.pop_contenu{
-  font-size: 100%;
+.pop_info{
+
   margin-left: 10px;
+}
+.pop_info p{
+  padding: 10px 0;
 }
   .Activities-marseille {
     margin: 6px 0px;
-    width: 100%;
+    width: 95%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: autofit(6, 1.5fr);
@@ -831,6 +839,10 @@ padding-top: 20px;
       "Notre-dame"
       "Parc-Longchamp";
   }
+  .Title-Activites {
+  padding:10px;
+
+}
 }
   @media only screen and (max-width: 500px) {
 
@@ -904,8 +916,6 @@ padding-top: 20px;
   #Pop_Fiche {
   background-color: #f2f2f2;
   border: none;
-
-  margin:5px 0px ;
   width: 100%;
 
  
@@ -926,6 +936,13 @@ padding-top: 20px;
     width: 100vw;
     display: flex;
 justify-content: space-evenly;
+padding: 15px 0;
+  }
+   .footer h3{
+     padding: 15px 10px;
+   }
+  .footer p{
+    padding:5px 10px;
   }
 
 
@@ -935,11 +952,9 @@ justify-content: space-evenly;
 
 
   @media only screen and (max-width: 500px) {
-    .Hebergement-main-container{
 
-width: 100%;
-
-
+      #logo img{
+  width: 100px;
 
 }
 
@@ -984,7 +999,9 @@ width: 100%;
     width: 100vw;
     display: flex;
     flex-direction: column;
+    padding: 20px;
   }
+
   }
 
 }
