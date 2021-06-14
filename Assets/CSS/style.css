@@ -312,6 +312,7 @@ margin: 10px 0;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
+    object-position: center;
 }
 a{
     text-decoration: none;
@@ -406,9 +407,9 @@ margin: 10px;
     width: 45%;
     height: 140px;
     border-top-left-radius:20px; 
-        border-bottom-left-radius:20px; 
-        object-fit: cover;
-        object-position: right;
+    border-bottom-left-radius:20px; 
+    object-fit: cover;
+    object-position:center;
 }
 .pop_info{
     display: flex;
@@ -421,7 +422,9 @@ margin: 10px;
     font-size: 16px;
     font-weight: 800;
 }
-
+.pop_info p{
+  padding: 10px 0;
+}
 /*-----------section Activities---------- */
 #Activites{
   margin:15px 10px;
