@@ -885,8 +885,7 @@ margin: 0%;
     justify-content: flex-end;
     grid-area: navbar-link-sign-up;
    font-weight:800;
-  position: absolute;
-  right: 15px;
+align-items: flex-end;
   }
 
     
